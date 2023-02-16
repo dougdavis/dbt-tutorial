@@ -1,0 +1,50 @@
+
+
+============================== 2023-02-15 14:58:24.071323 | ee213c21-75d8-426e-9c61-adcffb03d7cc ==============================
+[0m14:58:24.071323 [info ] [MainThread]: Running with dbt=1.4.1
+[0m14:58:24.072955 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/dougdavis/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'jaffle_shop', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m14:58:24.073105 [debug] [MainThread]: Tracking: tracking
+[0m14:58:24.093329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2cb42e970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2cb42ec10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2cb42ec70>]}
+[0m14:58:24.095220 [debug] [MainThread]: Starter project path: /Users/dougdavis/opt/anaconda3/lib/python3.9/site-packages/dbt/include/starter_project
+[0m14:58:24.099409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2cb42ec70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2cb42ecd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2cb42ea30>]}
+[0m14:58:24.099701 [debug] [MainThread]: Flushing usage events
+[0m14:58:24.883355 [error] [MainThread]: Encountered an error:
+[Errno 21] Is a directory: '/Users/dougdavis/.dbt/profiles.yml'
+[0m14:58:24.886367 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/dougdavis/opt/anaconda3/lib/python3.9/site-packages/dbt/main.py", line 135, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/dougdavis/opt/anaconda3/lib/python3.9/site-packages/dbt/main.py", line 198, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/dougdavis/opt/anaconda3/lib/python3.9/site-packages/dbt/main.py", line 245, in run_from_args
+    results = task.run()
+  File "/Users/dougdavis/opt/anaconda3/lib/python3.9/site-packages/dbt/task/init.py", line 302, in run
+    if not self.check_if_can_write_profile(profile_name=project_name):
+  File "/Users/dougdavis/opt/anaconda3/lib/python3.9/site-packages/dbt/task/init.py", line 200, in check_if_can_write_profile
+    with open(profiles_file, "r") as f:
+IsADirectoryError: [Errno 21] Is a directory: '/Users/dougdavis/.dbt/profiles.yml'
+
+
+
+============================== 2023-02-15 21:33:31.437528 | ff2e1130-8475-470c-85ed-160c3e728792 ==============================
+[0m21:33:31.437528 [info ] [MainThread]: Running with dbt=1.4.1
+[0m21:33:31.439164 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/dougdavis/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'jaffle_shop', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m21:33:31.439310 [debug] [MainThread]: Tracking: tracking
+[0m21:33:31.462756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86e0274b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86e3448ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86e3448b80>]}
+[0m21:33:31.464659 [debug] [MainThread]: Starter project path: /Users/dougdavis/opt/anaconda3/lib/python3.9/site-packages/dbt/include/starter_project
+[0m21:33:31.468711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86e3448ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86e3448b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86e3448d60>]}
+[0m21:33:31.468983 [debug] [MainThread]: Flushing usage events
+[0m21:33:31.873827 [error] [MainThread]: Encountered an error:
+[Errno 21] Is a directory: '/Users/dougdavis/.dbt/profiles.yml'
+[0m21:33:31.876415 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/dougdavis/opt/anaconda3/lib/python3.9/site-packages/dbt/main.py", line 135, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/dougdavis/opt/anaconda3/lib/python3.9/site-packages/dbt/main.py", line 198, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/dougdavis/opt/anaconda3/lib/python3.9/site-packages/dbt/main.py", line 245, in run_from_args
+    results = task.run()
+  File "/Users/dougdavis/opt/anaconda3/lib/python3.9/site-packages/dbt/task/init.py", line 302, in run
+    if not self.check_if_can_write_profile(profile_name=project_name):
+  File "/Users/dougdavis/opt/anaconda3/lib/python3.9/site-packages/dbt/task/init.py", line 200, in check_if_can_write_profile
+    with open(profiles_file, "r") as f:
+IsADirectoryError: [Errno 21] Is a directory: '/Users/dougdavis/.dbt/profiles.yml'
+
